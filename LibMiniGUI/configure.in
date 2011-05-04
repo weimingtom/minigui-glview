@@ -264,6 +264,7 @@ build_ext_ctrl_listview="yes"
 build_ext_ctrl_iconview="yes"
 build_ext_ctrl_gridview="no"
 build_ext_ctrl_animation="yes"
+build_ext_ctrl_glview="yes"
 
 build_ext_skin="yes"
 
@@ -627,6 +628,10 @@ build_ext_ctrl_gridview=$enableval)
 AC_ARG_ENABLE(extctrlanimation,
 [  --enable-extctrlanimation    include ANIMATION control and GIF87a/GIF89a support in MiniGUIExt library <default=yes>],
 build_ext_ctrl_animation=$enableval)
+
+AC_ARG_ENABLE(extctrlglview,
+[  --enable-extctrlglview     include GLVIEW control in MiniGUIExt library <default=yes>],
+build_ext_ctrl_glview=$enableval)
 
 AC_ARG_ENABLE(extskin,
 [  --enable-extskin             include skin support in MiniGUIExt library <default=yes>],
@@ -2085,6 +2090,11 @@ fi
 if test "x$build_ext_ctrl_animation" = "xyes"; then
     AC_DEFINE(_EXT_CTRL_ANIMATION, 1,
             [Define if include ANIMATION control])
+fi
+
+if test "x$build_ext_ctrl_glview" = "xyes"; then
+    AC_DEFINE(_EXT_CTRL_GLVIEW, 1,
+            [Define if include GLVIEW control])
 fi
 
 if test "x$build_ext_skin" = "xyes"; then
