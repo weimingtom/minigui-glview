@@ -49,7 +49,7 @@
 #define _GLVIEW_IMPL_H_
 
 
-#include "zgl.h"
+#include "../../../LibTinyGL/src/include/zgl.h"
 
 
 #ifdef __cplusplus
