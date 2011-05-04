@@ -67,7 +67,7 @@
 #ifdef _EXT_CTRL_GLVIEW
 
 
-#include "GL/gl.h"
+#include "tinygl/GL/gl.h"
 
 #include "ext/glview.h"
 #include "scrolled.h"
