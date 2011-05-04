@@ -305,6 +305,9 @@
 /* Define if include COOLBAR control */
 #undef _EXT_CTRL_COOLBAR
 
+/* Define if include GLVIEW control */
+#undef _EXT_CTRL_GLVIEW
+
 /* Define if include GRIDVIEW control */
 #undef _EXT_CTRL_GRIDVIEW
 
@@ -322,9 +325,6 @@
 
 /* Define if include TREEVIEW control */
 #undef _EXT_CTRL_TREEVIEW
-
-/* Define if include GLVIEW control */
-#undef _EXT_CTRL_GLVIEW
 
 /* Define if include skin support */
 #undef _EXT_SKIN
