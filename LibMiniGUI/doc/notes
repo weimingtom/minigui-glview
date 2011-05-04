@@ -1,0 +1,12 @@
+Known Issues:
+  1. MiniGL engine will ignore the color of vertexes which are outside the screen.
+    eg. We have RGB in 3 corners of a triangle, once the corners with R and G are outside the screen, the whole triangle will be in pure BLUE.
+
+
+TinyGL color format:
+  1. 8-bit index color: normal implementation
+  2. 16-bit color: 5-6-5 for RGB
+  3. 24-bit & 32-bit: convert to target color from 16-bit internal color
+  Summary: 16, 24, 32 bit color modes in MiniGL are all in 16-bit for internal calculation
+
+
