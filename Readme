@@ -1,13 +1,13 @@
-program	: GLView with TinyGL under MiniGUI
+program	: MiniGLView with TinyGL under MiniGUI
 author	: Wei (David) Wu
 E-mail	: KyosukeNo1@gmail.com
 
 
-MiniGUI GLView includes three separated parts of work:
+MiniGLView includes three separated parts of work:
 	1. External control of MiniGUI (http://www.minigui.org), 
-	   named GLView. GLView embedded a third party software 
+	   named GLView. MiniGLView embedded a third party software 
 	   renderer, TinyGL(http://bellard.org/TinyGL), which is a
-	   subset of OpenGL(http://www.opengl.org). GLView provides
+	   subset of OpenGL(http://www.opengl.org). MiniGLView provides
 	   some basic but fast and lightweight rendering 
 	   algorithms (powered by TinyGL) as well as keyboard and mouse
 	   interactive controlls (powered by MiniGUI).
@@ -18,10 +18,10 @@ MiniGUI GLView includes three separated parts of work:
 	3. Three rendering examples from official TinyGL examples with
 	   minimum changes.
 
-Copyright for GLView:
-	MiniGUI GLView is protected by GPL license. It is free for those
+Copyright for MiniGLView:
+	MiniGLView is protected by GPL license. It is free for those
 	who are 100% GPL and those who never copy, modify and distribute
-	MiniGUI GLView. 
+	MiniGLView. 
 
 Copyright for MiniGUI:
 	Feynman Software (http://www.minigui.com) releases some MiniGUI
@@ -39,7 +39,7 @@ Copyright for examples:
 
 
 
-How to run:
+How to run MiniGLView v0.1:
 	1. Install QVFB 1.1 from MiniGUI.org (http://minigui.org/res.shtml)
 		File: qvfb-1.1.tar.gz
 		Known issues: if configure for QVFB prompt that it needs QT3,
@@ -49,13 +49,15 @@ How to run:
 	2. Install resource files from MiniGUI.org (http://minigui.org/res.shtml)
 		File: minigui-res-1.6.10.tar.gz
 		Run command: sudo make install
-	2. Download all three folders LibMiniGUI, LibTinyGL and LibMiniGUI_TinyGL_Example,
-	   from Google Code SVN repository
-	3. Build LibMiniGUI with following commands:
+	3. Download all components from Google Code SVN repository or downloads:
+		a. LibMiniGUI
+		b. LibTinyGL
+		c. LibMiniGUI_TinyGL_Example,
+	4. Build LibMiniGUI with following commands:
 		a. configure
 		b. make
 		c. sudo make install
-	4. Build LibTinyGL with following commands:
+	5. Build LibTinyGL with following commands:
 		a. make
 		b. sudo make install
-	5. Build LibMiniGUI_TinyGL_Example with "make" command
+	6. Build LibMiniGUI_TinyGL_Example with "make" command
