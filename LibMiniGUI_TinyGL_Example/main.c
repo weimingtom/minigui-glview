@@ -1,14 +1,14 @@
 /**
-* program	: GLView with TinyGL under MiniGUI
+* program	: MiniGLView with TinyGL under MiniGUI
 * author	: Wei (David) Wu
 * E-mail	: KyosukeNo1@gmail.com
-*
 * 
-* MiniGUI GLView includes three separated parts of work:
+* 
+* MiniGUI MiniGLView includes three separated parts of work:
 * 		1. External control of MiniGUI (http://www.minigui.org), 
-* 		   named GLView. GLView embedded a third party software 
+* 		   named GLView. MiniGLView embedded a third party software 
 * 		   renderer, TinyGL(http://bellard.org/TinyGL), which is a
-* 		   subset of OpenGL(http://www.opengl.org). GLView provides
+* 		   subset of OpenGL(http://www.opengl.org). MiniGLView provides
 * 		   some basic but fast and lightweight rendering 
 * 		   algorithms (powered by TinyGL) as well as keyboard and mouse
 * 		   interactive controlls (powered by MiniGUI).
@@ -19,10 +19,10 @@
 * 		3. Three rendering examples from official TinyGL examples with
 * 		   minimum changes.
 * 
-* Copyright for GLView:
-*		MiniGUI GLView is protected by GPL license. It is free for those
+* Copyright for MiniGLView:
+*		MiniGUI MiniGLView is protected by GPL license. It is free for those
 * 		who are 100% GPL and those who never copy, modify and distribute
-* 		MiniGUI GLView. 
+* 		MiniGUI MiniGLView. 
 * 
 * Copyright for MiniGUI:
 * 		Feynman Software (http://www.minigui.com) releases some MiniGUI
@@ -39,7 +39,7 @@
 * 				minimum changes.
 * 
 * 
-* "If you redistribute MiniGUI GLView, I would appreciate that you
+* "If you redistribute MiniGLView, I would appreciate that you
 * include in the files history information documenting your changes."
 * 
 **/
